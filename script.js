@@ -80,7 +80,18 @@ console.log(total_ans)</pre>`
 
 Qno5 = document.getElementById("Q5")
 
-
+Qno5.innerText += `
+    function outerfunction(){
+        var counter=0;
+        function innerfunction(){
+            return counter += 1;
+        }
+        return innerfunction;
+    }
+    
+    let result = outerfunction()
+    
+    console.log(result())`
 
 // Output For Question No 6
 
